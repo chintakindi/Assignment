@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</head>
+<style>
+    .container{
+        margin-top: 35px;
+    }
+    body{
+        font-family:all;
+        background:rgba(2,0,36);
+        background:linear-gradient(90deg,rgba(2,0,36,1) 0%,rgba(9,9,121,1) 9%,rgba(8,18,127,1) 27%, rgba(7,31,136,1) 42%,rgba(8,212,255,1) 84%);
+
+    }
+    h2{
+        text-align:center;
+        color:#ffffff;
+    }
+    #form{
+        background-color:rgba(0,0,0,0.6);
+    }
+    .btn-info{
+        transition:0.5s ease-in-out;
+        background:rgba(2,0,36);
+        height:40px;
+        font-size:18px;
+        width:83%;
+    }
+    label{
+        color:#ffffff;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="col-md-3"></div>
+        
+        <div class="col-md-6 col-md-offset-3" id="form">
+            <form>
+                <h2>Registration Form</h2>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <input type="text" placeholder="First Name" class="form-control" required="">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" placeholder="Second Name" class="form-control" required="">
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <input type="Number" placeholder="Contact " class="form-control" required="">
+                        <br>
+
+                        <input type="email" placeholder="Enter Email" class="form-control" required="">
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <br>
+                <div class="row">
+                <div class="col-md-1"></div>
+
+                <div class="col-md-2">
+                    <label>Gender</label>
+                </div>
+
+                <div class="col-md-2">
+                    <label>Male</label>
+                    <input type="radio" name="Gender">
+                
+                </div>
+
+                <div class="col-md-3">
+                    <label>Female</label>
+                    <input type="radio" name="Gender">
+                
+                </div>
+                <div class="col-md-1"></div>
+                </div>
+                <br>
+                <div class="col-md-11">
+                <select class="form-control">
+                    <option>Skills</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                </select>
+                </div>
+
+                <br>
+                <center>
+                    <button type="submit" class="btn btn-info">Please login</button>
+                </center>
+
+                <br>
+
+                <center>
+                    <button type="submit" class="btn btn-info form-control">Register</button>
+                </center>
+                <br>
+
+            </form>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
